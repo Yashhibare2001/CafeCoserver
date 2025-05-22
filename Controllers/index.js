@@ -1,4 +1,4 @@
-const restaurantList = require("../Models/restaurants.json");
+const restaurantList = require("../Models/restaurants");
 // const mealTypes = require("../Models/mealtypes.json");
 
 
