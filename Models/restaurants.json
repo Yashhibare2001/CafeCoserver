@@ -443,20 +443,6 @@
         "cuisineType": "American",
         "dishes": [
             {
-                "name": "Classic Burger",
-                "price": 220,
-                "description": "Juicy beef patty with cheese and lettuce",
-                "image": "https://www.simplyrecipes.com/thmb/beef-burger.jpg",
-                "ingredients": [
-                    
-                    "Bun",
-                    "Cheese",
-                    "Lettuce",
-                    "Tomato",
-                    "Onion"
-                ]
-            },
-            {
                 "name": "Veggie Burger",
                 "price": 180,
                 "description": "Vegetable patty with fresh toppings",
