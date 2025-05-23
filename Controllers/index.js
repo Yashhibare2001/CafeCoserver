@@ -79,3 +79,20 @@ exports.getRestaurantsByCity = async (req, res) => {
         res.status(500).json({ error: "Error fetching by city" });
     }
 };
+
+const EmployeeBooking = require('../Models/employeeBooking');
+
+exports.saveEmployeeBooking = async (req, res) => {
+  try {
+    const { referenceId, date, mealType, items } = req.body;
+
+    const newBooking = new EmployeeBooking({ referenceId, date, mealType, items });
+    await newBooking.save();
+
+    res.status(200).json({ message: 'Booking saved successfully' });
+  } catch (error) {
+    console.error('Error saving booking:', error);
+    res.status(500).json({ message: 'Failed to save booking' });
+  }
+};
+

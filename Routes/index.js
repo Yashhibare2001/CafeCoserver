@@ -11,6 +11,8 @@ router.get('/restaurants/:id', controller.getRestaurantById);
 
 router.get('/getRestaurantsByCity/:city', controller.getRestaurantsByCity);
 
+router.put('/employee/booking', controller.saveEmployeeBooking);
+
 // router.get('/getMealTypes', controller.getAllMealTypes);
 
 module.exports = router;
