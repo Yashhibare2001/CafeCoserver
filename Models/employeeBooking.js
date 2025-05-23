@@ -1,17 +1,17 @@
 const mongoose = require('mongoose');
 
-const employeeBookingSchema = new mongoose.Schema({
+const bookingSchema = new mongoose.Schema({
   referenceId: { type: String, required: true },
   date: { type: String, required: true },
   mealType: { type: String, required: true },
   items: [
     {
       name: String,
+      restaurant: String,
       quantity: Number,
-      price: Number,
-      restaurant: String
+      price: Number
     }
-  ],
+  ]
 });
 
-module.exports = mongoose.model('EmployeeBooking', employeeBookingSchema);
+module.exports = mongoose.model('EmployeeBooking', bookingSchema);
